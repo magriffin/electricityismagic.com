@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Electricity is Magic - Experimental Music Label and Arts Organization" />
+		<meta name="keywords" content="electricity is magic, electricity, magic, max alexander, max, alexander, eric powell, eric, powell, matt griffin, matt, griffin, ian oldham, ian, oldham, nigel taylor, nigel, taylor, music, electroacoustic, experimental music, electroacoustic music, digital music, digital, electric music, electricity music, electricity label, electricity art, electricity magic art, davy bisaro, davy, bisaro, ambient music, ambient music label, ambient records, ambient, electroacoustic label, electroacoustic record label, improvised music, improvised record label, experimental electronic, exploratory electronic music, experimental record label, experimental canadian record label, canadian indie record label, canadian record label, independent record label, indepentend record label canada, independent record labels canada, electroacoustic canada, arts organization canada, arts organization, audio art, audio, sound art, sonic art, sonic art record label, lee blalock, eddie breitweiser, livebox, live box, livebox arts organization, threewalls gallery, threewalls" />
+<title>Electricity is Magic</title>
+<link href="main2016.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+
+<script src="js/jquery.js"></script>
+<script src="js/hammer.min.js"></script>
+<script src="js/eimscripts.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6717068-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body onLoad="firstalbum()" onClick="hidealbumgrid()">
+
+	<div id="title">
+    	<p align="center">
+			<a href="index.html"><img id="eimlogo" src="images/eimlogo_2014.jpg"/></a><br />
+			<a href="#" class="titles" onMouseOver="showalbumgrid()" onClick="showalbumgrid()">releases</a> | 
+			<a href="about.html" class="titles">about</a> | 
+			<a href="contact.html" class="titles">contact</a>
+		</p>
+        <div id="albumgridcontainer">
+        	<div id="albumgrid">
+            	<p class="gridorganization">
+                <a href="#" onClick="showadopted()"><img class="smallcovers" src="images/albumcovers/adoptedfamily.jpg"/></a>
+                <a href="#" onClick="showballads()"><img class="smallcovers" src="images/albumcovers/ballads_cover.jpg"/></a>
+                <a href="#" onClick="showmint()"><img class="smallcovers" src="images/albumcovers/mint_cover_03.jpg"/></a>
+                <a href="#" onClick="showlevee()"><img class="smallcovers" src="images/albumcovers/levee_cover.jpg"/></a><br />
+                <a href="#" onClick="showhalfsteps()"><img class="smallcovers" src="images/albumcovers/halfsteps.jpg"/></a>
+                <a href="#" onClick="showuls()"><img class="smallcovers" src="images/albumcovers/uls.jpg"/></a>
+                <a href="#" onClick="showmic()"><img class="smallcovers" src="images/albumcovers/mic.jpg"/></a>
+                <a href="#" onClick="showoln()"><img class="smallcovers" src="images/albumcovers/oln.jpg"/></a><br />
+                <a href="#" onClick="showdictionary()"><img class="smallcovers" src="images/albumcovers/dictionaryofsymbols.jpg"/></a>
+                <a href="#" onClick="showgridroad()"><img class="smallcovers" src="images/albumcovers/gridroad.jpg"/></a>
+                <a href="#" onClick="showuss()"><img class="smallcovers" src="images/albumcovers/uss.jpg"/></a>
+                <a href="#" onClick="showexitstrategy()"><img class="smallcovers" src="images/albumcovers/exitstrategy.jpg"/></a><br />
+                <a href="#" onClick="showornament()"><img class="smallcovers" src="images/albumcovers/ornament.jpg"/></a>
+                <a href="#" onClick="showpisc()"><img class="smallcovers" src="images/albumcovers/planeinterior.jpg"/></a>
+                <a href="#" onClick="showtowns()"><img class="smallcovers" src="images/albumcovers/towns.jpg"/></a>
+                <a href="#" onClick="showcawc()"><img class="smallcovers" src="images/albumcovers/cawc.jpg"/></a>
+                </p>
+        	</div>
+         </div>
+	</div>
+
+	<div id="container">
+    	<div class="arrow" id="left">
+        	<div class="arrowcontainer">
+        		<a href="#" id="cycle" onclick="previousrelease()"><img src="images/arrow_left.png" height="100"/></a>
+            </div>
+       	</div>
+        <div class="arrow" id="right">
+        	<div class="arrowcontainer">
+        		<a href="#" id="cycle" onclick="nextrelease()"><img src="images/arrow_right.png" height="100" align="right"/></a>
+            </div>
+        </div>
+        
+        <div class="releases" id="adoptedfamily" style="display:none">
+    		<a href="https://griggsmusic.bandcamp.com/album/adopted-family" target="_blank"><img class="covers" src="images/albumcovers/adoptedfamily.jpg" /></a>
+			<p class="linernotes">
+            Griggs<br />
+            Adopted Family<br /><br />
+            
+            Profit Season<br />
+			Last One Dancing Gets the Girl<br />
+			We Mountain<br />
+			The Middle Part of Never Forget<br />
+            Nitrous Nap<br />
+            Dismistify<br />
+            The Cities Were Much Smaller
+			Moon Boys & Graves<br /><br />
+            
+            Written & Performed by Matthew Griffin in Montreal, Canada in 2017 and 2018 <br /><br />
+
+Cover art by Elise Windsor (<a href="https://www.elisewindsor.com" target="_blank">www.elisewindsor.com</a>) <br /><br />
+
+Copyright Electricity is Magic 2019 <br />
+EIM011 
+            </p>
+        </div>
+        
+        <div class="releases" id="ballads" style="display:none">
+    		<a href="https://ericpowell.bandcamp.com/album/ballads-of-steel-and-linoleum" target="_blank"><img class="covers" src="images/albumcovers/ballads_cover.jpg" /></a>
+			<p class="linernotes">
+            Eric Powell<br />
+            Ballads of Steel and Linoleum<br /><br />
+            
+            We should do this again on a cool, crisp day	<br />
+			A Low and Distant Roar<br />
+			(William) Two for Two Twenty-Four.<br />
+			Steve<br />
+			Across the Water<br /><br />
+            
+            This album has been in the works since 2007, when I first started talking with my soon-to-be EiM co-Artistic Director Matt Griffin about a piece for trombone and airplanes. Since then, I have been writing music for odd combinations of instruments and environmental sounds. Many thanks to the EiM crew for always pushing the edges of contemporary music, and for helping make this album a reality. <br /><br />
+
+Ballads of Steel and Linoleum features <br />
+Matthew Griffin: Trombone <br />
+Nigel Taylor: Trumpet <br />
+Eric Powell: Vibraphone, Mandolin, Autoharp. <br /><br />
+
+All tracks (except "Steve") recorded in the War Room (Regina and Montreal) between 2010 and 2014. <br />
+"Steve" was recorded live at "Holophon at the Artesian," May 25, 2011. <br /><br />
+
+All tracks composed, recorded, mixed, and mastered by Eric Powell.<br /><br />
+
+Copyright 2017 Electricity Is Magic <br />
+EiM 010
+            </p>
+        </div>
+        
+        <div class="releases" id="mint" style="display:none">
+    		<a href="https://ourlegendarynature.bandcamp.com/album/canadian-mint" target="_blank"><img class="covers" src="images/albumcovers/mint_cover_03.jpg" /></a>
+			<p class="linernotes">
+            Canadian Mint<br />
+            Our Legendary Nature<br /><br />
+            	Yours to Discover<br />
+Use the Fall<br />
+Coney Island<br />
+Choked Lakeshore<br />
+The Days of Street Entertainment<br />
+The Empress<br />
+Sunroof Cameo<br /><br />
+
+Recorded in 2016 at Zoe Pawlak Studios in Montreal, Canada <br /><br />
+
+Matthew Griffin - Bass Guitar, Keyboards, Drum Programming, Harmonica  <br />
+Eric Powell - Bassoon, Toy Piano, Siren, Harmonica <br />
+Nigel Taylor - Trumpet, No-Input Mixer, Harmonica  <br /><br />
+
+Produced by Our Legendary Nautre <br /><br />
+Engineered and Mastered by Eric Powell<br /><br />
+Mixed by Matthew Griffin <br /><br />
+
+Copyright 2017 Electricity Is Magic <br />
+EiM 009
+            </p>
+        </div>
+        
+        <div class="releases" id="levee" style="display:none">
+    		<a href="https://nigeltaylor.bandcamp.com/album/levee" target="_blank"><img class="covers" src="images/albumcovers/levee_cover.jpg" /></a>
+			<p class="linernotes">
+            Levee<br />
+            Andy Allen / Andrew Clinkman / Chris Cretella / Jesse Heasley / Borey Shin / Fausto Sierakowski / Nigel Taylor<br /><br />
+            	1. (Clinkman)<br />
+2. (Allen)<br />
+3. (Heasley)<br />
+4. (Cretella)<br />
+5. (Taylor)<br />
+6. (Shin)<br />
+7. (Sierakowski)<br /><br />
+
+Recorded in 2014 in Montreal, Canada <br /><br />
+
+Andy Allen - saxophone <br />
+Andrew Clinkman - guitar <br />
+Chris Cretella - guitar <br />
+Jesse Heasley - bass <br />
+Fauso Sierakowski - saxophone <br />
+Borey Shin - keyboards <br />
+Nigel Taylor - trumpet <br /><br />
+
+Recorded, engineered, and mastered by Eric Powell <br />
+Mixed by Matthew Griffin <br /><br />
+
+Copyright 2016 Electricity Is Magic <br />
+EiM 008
+            </p>
+        </div>
+    	<div class="releases" id="halfsteps" style="display:none">
+    		<a href="https://maxalexander.bandcamp.com/album/half-steps-are-okay" target="_blank"><img class="covers" src="images/albumcovers/halfsteps.jpg" /></a>
+			<p class="linernotes">
+            	Half-Steps are Okay<br />
+                Max Alexander<br /><br />
+                Half-Steps are Okay<br />
+                Are Half-Steps Okay?<br /><br />
+                Written, Performed and Produced by Matthew Griffin in 2010. <br /><br />
+
+This piece was created with the assistance of the Experimental Sound Studio in Chicago, IL, and presented as a part of Florasonic, a sonic installation program at the Lincoln Park Conservatory. <br /><br />
+
+Copyright 2014 Electricity is Magic<br />
+EiM 007.2
+            </p>
+        </div>
+        <div class="releases" id="uls" style="display:none">
+    		<a href="https://ericpowell.bandcamp.com/album/uls-2012-swede-lake" target="_blank"><img class="covers" src="images/albumcovers/uls.jpg" /></a>
+			<p class="linernotes">
+            	Under Living Skies 2012: Swede Lake<br />
+                Eric Powell<br /><br />
+                Paddle Out<br />
+                Fake Nature<br />
+                Tone Row<br />
+                Karl Valiaho Solo<br />
+                Violence<br />
+                Siren Score<br /><br />
+                Recorded live on Swede Lake, a small body of water deep in the woods of Northern Saskatchewan. This project explored the natural acoustics of this small lake, playing with the echo and and natural filtration effects discovered on site.<br /><br />
+credits
+
+Featuring performances by Matt Griffin, Nigel Taylor, Karl Valiaho and Eric Powell. This project was made possible through the generous support of the Saskatchewan Arts Board.<br /><br />
+Copyright 2014 Electricity is Magic<br />
+EiM 007.1
+            </p>
+        </div>
+        <div class="releases" id="mic" style="display:none">
+    		<a href="https://rararumusic.bandcamp.com/album/metallic-ink-co" target="_blank"><img class="covers" src="images/albumcovers/mic.jpg" /></a>
+			<p class="linernotes">
+            	Metallic Ink Co.<br />
+                Ra Ra Ru<br /><br />
+                Mary Had a Little Secret<br />
+                You Just Don't Get It, Do You?<br />
+                It's a Nice Thing<br />
+                Ascending Peaks<br />
+                Upside Down Tube Chute<br />
+                Mr. Jenkins' Pet Penguins Pt 1 & 2<br />
+                Sloshed<br />
+              	Roar La La<br /><br />
+               Personnel: <br />
+Jake Baldwin - Trumpet and Cornet<br /> 
+Pat Kuehn - Electric Bass <br />
+Nick Neuburg - Drums/Cymbals/Percussion <br />
+Asher Kurtz - Guitar <br />
+John Cushing - Trombone <br /><br />
+
+Recorded September 8th, 2013 by Eric Schmider in Boston, MA <br />
+Mixed/Mastered by Corey Schreppel in Minneapolis, MN <br /><br />
+
+photography by eric powell <br />
+cover design by matthew griffin  <br /><br />
+Copyright 2014 Electricity is Magic<br />
+EiM 007
+            </p>
+        </div>
+        <div class="releases" id="oln" style="display:none">
+    		<a href="https://ourlegendarynature.bandcamp.com/album/our-legendary-nature" target="_blank"><img class="covers" src="images/albumcovers/oln.jpg" /></a>
+			<p class="linernotes">
+            	Our Legendary Nature<br />
+                Our Legendary Nature<br /><br />
+                A Gesture of Friendship<br />
+                The Rat King Goes Underground<br />
+                The Gears<br />
+                But Still I Love You in My Own Peculiar Way<br /><br />
+                Max Alexander - Laptop, Wurlitzer, Whistle, Boxing Gloves <br />
+Eric Powell - Wurlitzer, Guitar, Accordion, Siren <br />
+Nigel Taylor - Trumpet, Radios, Mixer, Pedal Steel <br /><br />
+
+Recorded August 2012 in Regina, Saskatchewan <br /><br />
+
+Produced by Our Legendary Nature <br />
+Mixed by Max Alexander <br />
+Mastered by Eric Powell <br /><br />
+
+Cover Photography and Design by Matthew Griffin <br /><br />
+
+Copyright 2014 Electricity is Magic<br />
+EiM 006  
+            </p>
+        </div>
+        <div class="releases" id="dictionary" style="display:none">
+    		<a href="https://nigeltaylor.bandcamp.com/album/dictionary-of-symbols" target="_blank"><img class="covers" src="images/albumcovers/dictionaryofsymbols.jpg" /></a>
+			<p class="linernotes">
+            	Dictionary of Symbols<br />
+                Nigel Taylor<br /><br />
+                Tracartin<br />
+                Sevens<br /><br />
+                Written and Performed by Nigel Taylor <br /><br />
+
+Engineered and Mixed by Eric Powell in the War Room. Montreal, QC. Sprint 2012 <br /><br />
+
+Mastered by Steve Berson at Total Sonic Media <br /><br />
+
+Artwork by Kyle Kostecki <br />
+www.kylekostecki.com <br /><br />
+
+Layout by Matthew Griffin <br /><br />
+
+Text by Eric Powell <br /><br />
+
+Copyright 2013 Electricity is Magic <br />
+EiM 005
+            </p>
+        </div>
+        
+        
+        <div class="releases" id="gridroad" style="display:none">
+    		<a href="http://www.electricityismagic.com/gridroadmap/" target="_blank"><img class="covers" src="images/albumcovers/gridroad.jpg" /></a>
+			<p class="linernotes">
+            	Listeners Guide to the Saskatchewan Grid Road Map<br />
+                Eric Powell<br /><br />
+                Hwy1 Regina-MooseJaw<br />
+               	Hwy2 South MooseJaw-Chamberlain<br />
+                Hwy11 Regina-Chamberlain<br />
+                Hwy 39 Estevan-Weyburn<br /><br />
+                Written, Performed and Recorded by Eric Powell in Saskatchewan, Canada in 2011.<br /><br />
+                Copyright 2012 Electricity is Magic<br />
+                EiM 004 
+            </p>
+        </div>
+        <div class="releases" id="uss" style="display:none">
+    		<a href="https://ericpowell.bandcamp.com/album/under-singing-skies" target="_blank"><img class="covers" src="images/albumcovers/uss.jpg" /></a>
+			<p class="linernotes">
+            	Under Singing Skies<br />
+                Eric Powell<br /><br />
+                Resource<br />
+                City<br />
+                Transportation<br />
+                Country<br /><br />
+                Commissioned by the Saskatchewan Arts Board for the 2010 Lieutenant Governor’s Awards.<br /><br />
+
+Featuring Carmelle Pretzlaw – Violin, Kieran Conway – Cello, Elizabeth Curry – Double Bass, Nigel Taylor & Cheney Lambert – Trumpets, Kory Gibbs – Sruti Box & Percussion, and Eric Powell – Bass Clarinet & Bassoon.<br /><br />
+
+Copyright 2011 Electricity is Magic <br />
+EiM 003.2
+            </p>
+        </div>
+        <div class="releases" id="exitstrategy" style="display:none">
+    		<a href="https://maxalexander.bandcamp.com/album/exit-strategy-selections-from-chicago-2007-2011" target="_blank"><img class="covers" src="images/albumcovers/exitstrategy.jpg" /></a>
+			<p class="linernotes">
+            	Exit Strategy: Selections from Chicago 2007-2011<br />
+                Max Alexander<br /><br />
+                Plane Interior Steady Cruising (The Movie Remix)<br />
+                Ruins<br />
+                Liquid & Mobile States<br />
+                Nettwerkd<br />
+                About to Speak (or Speaking)<br />
+                Hyposuction<br />
+                Good Locomotive (Will)<br />
+                Theme from "Mind Dance"<br />
+                Portofino (Model Home)<br />
+                Heartbeat Study no. 1<br />
+                Latex Studies<br />
+                Mammogram<br />
+                Kiss Me on the Bus<br />
+                1400 of Anything<br />
+                Crime<br /><br />
+                Written, Performed and Produced by Matthew Griffin except as noted <br /><br />
+
+“Plane Interior Steady Cruising (The Movie Remix)” <br />
+Cymbals and shakers sampled from "Certain Blacks" by The Art Ensemble of Chicago <br />
+Flutes and rain sticks sampled from an unmarked new age CD-R <br />
+Modems and fax machines sampled from findsounds.com <br />
+Soundtrack to LOLCats: The Ballet: The Movie, edited from Plane Interior Steady Cruising EP (2010) <br /><br />
+
+“Ruins” <br />
+From the soundtrack to Matthew Kelly’s film Ruins (2008) <br /><br />
+
+“Liquid & Mobile States” <br />
+From collaborative installation project with Michelle Menzies (2010) <br /><br />
+
+“Nettwerkd” <br />
+Unreleased. Written for/premiered at “Electric Lights” event at The Nightingale, Chicago (2009)<br /><br /> 
+
+“About to Speak (or Speaking)” <br />
+Vocals performed by the Art Slut Choristers (Eric Powell, Emily Pearlman, Kathleen Hepburn, Will Goss, Kierin Gorlitz, Galen Elfert, Tif Bullard, Davy Bisaro, Max Alexander) <br />
+B-side from Cast a Widening Circle (2009) <br /><br />
+
+“Hyposuction” <br />
+B-side from Lions. Created using custom Max/MSP software and whistling. Software since lost. This piece is no longer performable. (2007) <br /><br />
+
+“Good Locomotive (Will)” <br />
+From the Good Locomotive video project (never completed or released). Recorded from a performance using custom Max/MSP software and heartbeat monitor at the Thompson Center, Chicago, IL (2008) <br /><br />
+
+“Theme from Mind Dance” <br />
+Violin performed by Shuwen Ye <br />
+Cello performed by Chun-Hei Yip <br />
+From the soundtrack to Yating Hsu’s film Mind Dance (2010) <br /><br />
+
+“Portofino (Model Home)” <br />
+Audio from Portofino video collaboration with Andrea Slavik and Andrew Lochhead (2008) <br /><br />
+
+“Heartbeat Study no. 1” <br />
+Unreleased. Created using custom Max/MSP software and heartbeat monitor (2007) <br /><br />
+
+“Latex Studies” <br />
+Soundtrack to video collaboration with Alexandra K. Deitz (2007) <br /><br />
+
+“Mammogram” <br />
+B-side from Lions (2007) <br /><br />
+
+“Kiss Me on the Bus” <br />
+Edited on a Greyhound Bus going from Detroit to Chicago using piano sketches for the Mind Dance soundtrack (2010) <br /><br />
+
+“1400 of Anything” <br />
+From an uncompleted Vas Deferens (Max Alexander and Tif Bullard) record (2009) <br /><br />
+
+“Crime” <br />
+B-side from Ornament & Crime (2009) <br /><br />
+
+Copyright 2011 Electricity is Magic<br />
+EiM 003.1 
+            </p>
+        </div>
+        
+        <div class="releases" id="ornament" style="display:none">
+    		<a href="https://maxalexander.bandcamp.com/album/ornament-crime" target="_blank"><img class="covers" src="images/albumcovers/ornament.jpg" /></a>
+			<p class="linernotes">
+            	Ornament and Crime<br />
+                Max Alexander<br /><br />
+                Yellow Magnetic<br />
+                The Frosted Glass/Scotch Tape Trick<br />
+                Synonumeral<br />
+                Remedial Watchdog Manpower<br />
+                Make New Human<br />
+                The Abortionists of Unity are Indeed Angel Makers<br />
+                Terracon Rock (or leaf in)<br />
+                Straight Aces<br />
+                One Hundred Bees<br />
+                I Was a Headphone Walker<br /><br />
+                written and produced by Matthew Griffin
+in chicago, il may - aug 2009 <br /><br />
+
+drums on “one hundred bees” by galen elfert <br />
+tenor saxophone on “the frosted” and “synonumeral” by luke griffin <br />
+violin on “make new human” by owen pallett (live at the pitchfork music festival july 2009) <br />
+"synonumeral" contains a sample of "50 ways to make a record" by kid cudi <br /><br />
+
+cover art by ali seradge <br /><br />
+
+Copyright 2011 Electricity is Magic <br />
+EiM 003 
+            </p>
+        </div>
+        <div class="releases" id="pisc" style="display:none">
+    		<a href="https://maxalexander.bandcamp.com/album/plane-interior-steady-cruising-ep" target="_blank"><img class="covers" src="images/albumcovers/planeinterior.jpg" /></a>
+			<p class="linernotes">
+            	Plane Interior Steady Cruising<br />
+                Max Alexander<br /><br />
+                Plane Interior Steady Cruising<br /><br />
+                Written and produced by Matthew Griffin in Chicago, March - April 2010<br /><br />
+
+Cymbals and shakers sampled from "Certain Blacks" by The Art Ensemble of Chicago <br />
+Flutes and rain sticks sampled from an unmarked new age CD-R <br />
+Modems and fax machines sampled from findsounds.com <br /><br />
+
+Plane Interior Steady Cruising was written for LOLCats: The Ballet, a futuristic extravaganza by Cash Sage & Davy Bisaro, first performed at The Fishbowl Gallery in Chicago, Il, May 1, 2010 <br /><br />
+
+Copyright 2010 Electricity is Magic <br />
+EiM 002.1 
+            </p>
+        </div>
+        <div class="releases" id="towns" style="display:none">
+    		<a href="https://ericpowell.bandcamp.com/album/towns-the-train-forgot" target="_blank"><img class="covers" src="images/albumcovers/towns.jpg" /></a>
+			<p class="linernotes">
+            	Towns the Trains Forgot<br />
+                Eric Powell<br /><br />
+                Beausejour<br />
+                Burgeo<br />
+                Disley<br />
+                Eyebrow<br />
+                Tisdale<br />
+                Resolute<br />
+                Noralee<br />
+                Avonley<br />
+                Uranium City<br />
+                Caron<br />
+                Findlater<br />
+                Little Neballos<br /><br />
+                An audio portrait of the slowly-dwindling small towns across Western Canada.<br /><br />
+                 
+                Copyright 2009 Electricity is Magic <br />
+                EiM 002  
+            </p>
+        </div>
+        <div class="releases" id="cawc" style="display:none">
+    		<a href="https://maxalexander.bandcamp.com/album/cast-a-widening-circle" target="_blank"><img class="covers" src="images/albumcovers/cawc.jpg"/></a>
+			<p class="linernotes">  	
+            	Cast a Widening Cirlce<br />
+                Max Alexander<br /><br />
+                After Years of Grey Airplanes<br />
+                "Thorn and Din"<br />
+                The Mediator<br />
+                "Wooden Spoons on an Oil Drum"<br />
+                Fearful Ghost of Former Bloom<br />
+                "In Today's Sharp Sparkle"<br />
+                Replaced by Electric Lights<br /><br />
+                Written, produced, and recorded by Matthew Griffin in Chicago, 2008-2009.<br /><br />
+
+"Thorn", "Wooden", and "Sparkle" feature the voices of the Art Slut Choristers (eric powell, kathleen hepburn, will goss, kierin gorlitz, galen elfert, tif bullard, davy bisaro, and max alexander). Poem "Praise Song for the Day" by Elizabeth Alexander. <br /><br />
+
+Cover art by Adam Neese. <br /><br />
+
+Copyright 2009 Electricity is Magic<br />
+EiM 001            
+            </p>
+        </div>
+        
+        
+        
+	</div>
+    
+    
+
+</body>
+
+</html>

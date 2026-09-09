@@ -1,0 +1,152 @@
+@charset "UTF-8";
+html {
+	height:100%;
+}
+
+body {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	letter-spacing:0px;
+	font-size: 14px;
+	height:100%;
+}
+
+a {
+	color:#CAC;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#CAC;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#CAC;
+	text-decoration:none;
+}
+
+a.titles {
+	color:#000;
+	text-decoration:none;
+}
+
+#title {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	margin:0px;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	letter-spacing:1px;
+	font-size:24px;
+}
+
+#container {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	top:346px;
+	width:85%;
+	height:inherit;
+}
+
+#bar01 {
+	position:absolute;
+	top:0px;
+	left:0%;
+	width:20px;
+	height:inherit;
+	background-image:url(images/bar_01.jpg);
+	background-repeat:repeat-y;
+}
+
+#bar02 {
+	position:absolute;
+	top:72px;
+	left:48%;
+	width:20px;
+	height:inherit;
+	background-image:url(images/bar_02.jpg);
+	background-repeat:repeat-y;
+}
+
+#bar03 {
+	position:absolute;
+	top:152px;
+	left:80%;
+	width:20px;
+	height:inherit;
+	background-image:url(images/bar_03.jpg);
+	background-repeat:repeat-y;
+}
+
+#bar04 {
+	position:absolute;
+	top:-37px;
+	left:99%;
+	width:20px;
+	height:inherit;
+	background-image:url(images/bar_04.jpg);
+	background-repeat:repeat-y;
+}
+
+#maincontent {
+	position:absolute;
+	top:0px;
+	left:4%;
+	width: 43%;
+	height: 629px;
+}
+
+#newestrelease {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	letter-spacing:0px;
+	font-size:10px;
+	position:absolute;
+	top:72px;
+	left:51%;
+	width: 27%;
+	height: 283px;
+}
+
+#newestreleaseinfo {
+	font-size:10px;
+	position:absolute;
+	top:154px;
+	left:83%;
+	width: 15%;
+	height: 283px;
+}
+
+h1 {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	letter-spacing:0px;
+	font-size:18px;
+	font-weight:600;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#mainmenu {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:720px;
+	background-image:url('images/menu.png');
+	text-align:center;
+	opacity:0.6;
+}
+	
+#galleria{
+
+}
+
+#homebutton{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height: 30%;
+	width:35%;
+}
